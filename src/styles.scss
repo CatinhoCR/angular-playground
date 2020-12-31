@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+// Abstracts - Rule of Thumb here is: Should NOT print a single CSS line when rendered
+@import 'assets/styles/abstracts/variables';
+@import 'assets/styles/abstracts/functions';
+@import 'assets/styles/abstracts/mixins';
+
+// Base Reusable Styles for the whole app
+@import 'assets/styles/base/normalize';
+@import 'assets/styles/base/typography';
+@import 'assets/styles/base/utilities';
+@import 'assets/styles/base/globals';
+
+// Site General Layout Styles
+@import 'assets/styles/layout/dashboard';
+@import 'assets/styles/layout/nav';
+@import 'assets/styles/layout/drawer';
+
+// Smaller Components
+@import 'assets/styles/components/icon-toggler';
+
+// Colors Classes
+@import 'assets/styles/theme/admin-theme';
